@@ -24,3 +24,6 @@ root          ALL=(ALL) ALL
 <% end -%>
 
 <%= '#includedir /etc/sudoers.d' if @include_sudoers_d  %>
+
+Defaults   env_reset
+Defaults   secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" 
